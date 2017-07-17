@@ -24,7 +24,12 @@
     </main>
     <div class="flexbox-container">
       <div>
+        <form onsubmit="searchRepositories(); return false;">
+          <input type="text" id="searchTerms">
+          &nbsp;<input type="submit" value="Search">
+        </form>
         <h3>Repositories</h3>
+        <div id="errors"></div>
         <div id="results"></div>
       </div>
       <div>
@@ -33,6 +38,25 @@
       </div>
     </div>
     <script src="jquery-3.1.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.0.0/handlebars.js"></script>
     <script src="index.js"></script>
+    <script id="repository-template" type="text/x-handlebars-template">
+    {{#each this}}
+    <header><h4><a href="{{r.html_url}}">{{name}}</a></h4></header>
+    {{#if description}}
+    <p>{{description}}</p>
+    {{/if}}
+    <p><a href="{{url}}"><img src="{{owner.avatar_url}}" height="32" width="32"></a> {{owner.login}}</p>
+    <p><a href="#" data-repository="{{name}}" data-username="{{owner.login}}" onclick="getCommits(this)">Get Commits</a></p>
+    {{/each}}
+    </script>
+    <script id="commits-template" type="text/x-handlebars-template">
+    {{#each this}}
+    <p>{{commit.message}}</p>
+    <p>{{sha}}</p>
+    <p><a href="{{author.html_url}}"><img src="{{author.avatar_url}}" height="32" width="32"></a> {{author.login}}</p>
+    <p>{{author.name}}</p>
+    {{/each}}
+    </script>
   </body>
 </html>

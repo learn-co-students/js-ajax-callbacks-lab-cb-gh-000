@@ -20,6 +20,10 @@
   </head>
   <body>
     <main id="main">
+     <form onsubmit="searchRepositories(); return false;">
+       	<input type="text" id="searchTerms">
+        <input type="submit" value="Search">
+     </form>
       <div id="errors"></div>
     </main>
     <div class="flexbox-container">
@@ -34,5 +38,35 @@
     </div>
     <script src="jquery-3.1.0.min.js"></script>
     <script src="index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.js"></script>
+    
+     <script id="repository-template" type="text/x-handlebars-template">
+    	<ul>
+    		{{#each this}}
+    		<li>
+    			<h2><a href="{{html_url}}">{{name}}</a></h2>
+    			<p>Description: {{description}}</p>
+    			{{> authorPartial owner}}
+    			<a href="#" data-repository="{{name}}" data-username="{{owner.login}}" onclick="showCommits(this);">Show Commits</a>
+    		</li>
+    		{{/each}}
+    	</ul>
+    </script>
+    <script id="author-partial-template" type="text/x-handlebars-template">
+    	<section>
+    				<header><h4>Created By {{login}}</h4></header>
+    				<img src="{{avatar_url}}" height="32" width="32" alt="">
+    				<a href="{{html_url}}">Profile page</a>
+    			</section>
+    </script>
+    
+    <script id="repo-commits-template" type="text/x-handlebars-template">
+    	{{#each this}}
+    		<h2>{{commit.author.name}}</h2>
+    		<h2>{{author.login}}</h2>
+    		<p>SHA: {{sha}}</p>
+    		<img src="{{author.avatar_url}}" height="32" width="32" alt="">
+    	{{/each}}
+    </script>
   </body>
 </html>

@@ -1,0 +1,80 @@
+{
+  "stats": {
+    "suites": 6,
+    "tests": 3,
+    "passes": 2,
+    "pending": 0,
+    "failures": 2,
+    "start": "2018-01-17T19:33:08.127Z",
+    "end": "2018-01-17T19:33:09.016Z",
+    "duration": 889
+  },
+  "tests": [
+    {
+      "title": "has the right elements",
+      "fullTitle": "index.js index.html has the right elements",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "registers a userDetails partial",
+      "fullTitle": "index.js handlebars registers a userDetails partial",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {
+        "message": "Attempting to register a partial called \"userDetails\" as undefined",
+        "name": "Error",
+        "stack": "Error: Attempting to register a partial called \"userDetails\" as undefined\n    at HandlebarsEnvironment.registerPartial (C:\\Users\\Julia\\Documents\\flatiron-full-stack\\Javascript\\js-ajax-callbacks-lab-cb-gh-000\\node_modules\\handlebars\\dist\\cjs\\handlebars\\base.js:75:15)\n    at handlebarsSetup (c:\\Users\\Julia\\Documents\\flatiron-full-stack\\Javascript\\js-ajax-callbacks-lab-cb-gh-000\\index.js:3:14)\n    at Context.it (C:\\Users\\Julia\\Documents\\flatiron-full-stack\\Javascript\\js-ajax-callbacks-lab-cb-gh-000\\test\\index-test.js:34:7)\n    at callFn (C:\\Users\\Julia\\Documents\\flatiron-full-stack\\JavaScript\\js-ajax-callbacks-lab-cb-gh-000\\node_modules\\mocha\\lib\\runnable.js:326:21)\n    at Test.Runnable.run (C:\\Users\\Julia\\Documents\\flatiron-full-stack\\JavaScript\\js-ajax-callbacks-lab-cb-gh-000\\node_modules\\mocha\\lib\\runnable.js:319:7)\n    at Runner.runTest (C:\\Users\\Julia\\Documents\\flatiron-full-stack\\JavaScript\\js-ajax-callbacks-lab-cb-gh-000\\node_modules\\mocha\\lib\\runner.js:422:10)\n    at C:\\Users\\Julia\\Documents\\flatiron-full-stack\\JavaScript\\js-ajax-callbacks-lab-cb-gh-000\\node_modules\\mocha\\lib\\runner.js:528:12\n    at next (C:\\Users\\Julia\\Documents\\flatiron-full-stack\\JavaScript\\js-ajax-callbacks-lab-cb-gh-000\\node_modules\\mocha\\lib\\runner.js:342:14)\n    at C:\\Users\\Julia\\Documents\\flatiron-full-stack\\JavaScript\\js-ajax-callbacks-lab-cb-gh-000\\node_modules\\mocha\\lib\\runner.js:352:7\n    at next (C:\\Users\\Julia\\Documents\\flatiron-full-stack\\JavaScript\\js-ajax-callbacks-lab-cb-gh-000\\node_modules\\mocha\\lib\\runner.js:284:14)\n    at Immediate.<anonymous> (C:\\Users\\Julia\\Documents\\flatiron-full-stack\\JavaScript\\js-ajax-callbacks-lab-cb-gh-000\\node_modules\\mocha\\lib\\runner.js:320:5)"
+      }
+    },
+    {
+      "title": "sets the errors div content",
+      "fullTitle": "index.js displayError sets the errors div content",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    }
+  ],
+  "pending": [],
+  "failures": [
+    {
+      "title": "registers a userDetails partial",
+      "fullTitle": "index.js handlebars registers a userDetails partial",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {
+        "message": "Attempting to register a partial called \"userDetails\" as undefined",
+        "name": "Error",
+        "stack": "Error: Attempting to register a partial called \"userDetails\" as undefined\n    at HandlebarsEnvironment.registerPartial (C:\\Users\\Julia\\Documents\\flatiron-full-stack\\Javascript\\js-ajax-callbacks-lab-cb-gh-000\\node_modules\\handlebars\\dist\\cjs\\handlebars\\base.js:75:15)\n    at handlebarsSetup (c:\\Users\\Julia\\Documents\\flatiron-full-stack\\Javascript\\js-ajax-callbacks-lab-cb-gh-000\\index.js:3:14)\n    at Context.it (C:\\Users\\Julia\\Documents\\flatiron-full-stack\\Javascript\\js-ajax-callbacks-lab-cb-gh-000\\test\\index-test.js:34:7)\n    at callFn (C:\\Users\\Julia\\Documents\\flatiron-full-stack\\JavaScript\\js-ajax-callbacks-lab-cb-gh-000\\node_modules\\mocha\\lib\\runnable.js:326:21)\n    at Test.Runnable.run (C:\\Users\\Julia\\Documents\\flatiron-full-stack\\JavaScript\\js-ajax-callbacks-lab-cb-gh-000\\node_modules\\mocha\\lib\\runnable.js:319:7)\n    at Runner.runTest (C:\\Users\\Julia\\Documents\\flatiron-full-stack\\JavaScript\\js-ajax-callbacks-lab-cb-gh-000\\node_modules\\mocha\\lib\\runner.js:422:10)\n    at C:\\Users\\Julia\\Documents\\flatiron-full-stack\\JavaScript\\js-ajax-callbacks-lab-cb-gh-000\\node_modules\\mocha\\lib\\runner.js:528:12\n    at next (C:\\Users\\Julia\\Documents\\flatiron-full-stack\\JavaScript\\js-ajax-callbacks-lab-cb-gh-000\\node_modules\\mocha\\lib\\runner.js:342:14)\n    at C:\\Users\\Julia\\Documents\\flatiron-full-stack\\JavaScript\\js-ajax-callbacks-lab-cb-gh-000\\node_modules\\mocha\\lib\\runner.js:352:7\n    at next (C:\\Users\\Julia\\Documents\\flatiron-full-stack\\JavaScript\\js-ajax-callbacks-lab-cb-gh-000\\node_modules\\mocha\\lib\\runner.js:284:14)\n    at Immediate.<anonymous> (C:\\Users\\Julia\\Documents\\flatiron-full-stack\\JavaScript\\js-ajax-callbacks-lab-cb-gh-000\\node_modules\\mocha\\lib\\runner.js:320:5)"
+      }
+    },
+    {
+      "title": "\"before each\" hook for \"calls out to the github search API and displays results\"",
+      "fullTitle": "index.js ajax functions \"before each\" hook for \"calls out to the github search API and displays results\"",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "message": "Attempting to register a partial called \"userDetails\" as undefined",
+        "name": "Error",
+        "stack": "Error: Attempting to register a partial called \"userDetails\" as undefined\n    at HandlebarsEnvironment.registerPartial (C:\\Users\\Julia\\Documents\\flatiron-full-stack\\Javascript\\js-ajax-callbacks-lab-cb-gh-000\\node_modules\\handlebars\\dist\\cjs\\handlebars\\base.js:75:15)\n    at handlebarsSetup (c:\\Users\\Julia\\Documents\\flatiron-full-stack\\Javascript\\js-ajax-callbacks-lab-cb-gh-000\\index.js:3:14)\n    at Context.beforeEach (C:\\Users\\Julia\\Documents\\flatiron-full-stack\\Javascript\\js-ajax-callbacks-lab-cb-gh-000\\test\\index-test.js:56:7)\n    at callFn (C:\\Users\\Julia\\Documents\\flatiron-full-stack\\JavaScript\\js-ajax-callbacks-lab-cb-gh-000\\node_modules\\mocha\\lib\\runnable.js:326:21)\n    at Hook.Runnable.run (C:\\Users\\Julia\\Documents\\flatiron-full-stack\\JavaScript\\js-ajax-callbacks-lab-cb-gh-000\\node_modules\\mocha\\lib\\runnable.js:319:7)\n    at next (C:\\Users\\Julia\\Documents\\flatiron-full-stack\\JavaScript\\js-ajax-callbacks-lab-cb-gh-000\\node_modules\\mocha\\lib\\runner.js:298:10)\n    at Immediate.<anonymous> (C:\\Users\\Julia\\Documents\\flatiron-full-stack\\JavaScript\\js-ajax-callbacks-lab-cb-gh-000\\node_modules\\mocha\\lib\\runner.js:320:5)"
+      }
+    }
+  ],
+  "passes": [
+    {
+      "title": "has the right elements",
+      "fullTitle": "index.js index.html has the right elements",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "sets the errors div content",
+      "fullTitle": "index.js displayError sets the errors div content",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    }
+  ]
+}

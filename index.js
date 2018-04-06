@@ -1,6 +1,6 @@
 $(document).ready(function (){
 
-
+});
 function searchRepositories() {
   const repoName = document.getElementById('searchTerms').value
   const url = `https://api.github.com/search/repositories\?q=${repoName}`
@@ -33,6 +33,3 @@ function displayError(error) {
   document.getElementById('errors').innerHTML = message
   // console.log(error)
 }
-
-
-});

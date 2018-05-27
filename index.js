@@ -2,7 +2,7 @@
 function displayError(){
   $('#errors').html("I'm sorry, there's been an error. Please try again.")
 }
-var renderSearchResult = (result) => {
+function renderSearchResult(result){
   return `
       <div>
         <h2><a href="${result.html_url}">${result.name}</a></h2>
@@ -13,7 +13,9 @@ var renderSearchResult = (result) => {
     `
 }
 
-var renderSearchResults = (data) => data.items.map( result => renderSearchResult(result))
+function renderSearchResults(data){
+  return data.items.map( result => renderSearchResult(result))
+}
 
 var searchRepositories = () => {
   const searchTerms = $('#searchTerms').val()
